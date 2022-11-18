@@ -149,7 +149,7 @@ def home(request):
         "geoserver_endpoint": geoserver_endpoint,
         "date_picker": date_picker,
         "regions": regions,
-        "searchList": search_list,
+        "search_list": search_list,
         "provinces": provinces,
         "basins": basins,
         "subbasins": subbasins,
