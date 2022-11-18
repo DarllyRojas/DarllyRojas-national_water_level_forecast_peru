@@ -7,7 +7,7 @@ class NationalWaterLevelForecastPeru(TethysAppBase):
     """
 
     name = 'National Water Level Forecast Peru'
-    index = 'national_water_level_forecast_peru:home'
+    index = 'home'
     icon = 'national_water_level_forecast_peru/images/national_water_level_forecast_peru.jpeg'
     package = 'national_water_level_forecast_peru'
     root_url = 'national-water-level-forecast-peru'
