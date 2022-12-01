@@ -32,7 +32,16 @@
 
 {% block app_content %}
 
-<center> <h1 style="color:#20295c;"><strong>MANUAL DE USUARIOS DE LA APLICACIÓN NATIONAL WATER LEVEL FORECAST</strong></h1></center>
+
+  <table width="100%"  align="center" bgcolor="#00374b">
+    <tr>
+     <td><center> <h1 style="color:#ffffff;"><strong>MANUAL DE USUARIOS DE LA APLICACIÓN NATIONAL WATER LEVEL FORECAST</strong></h1></center></td>
+    </tr>
+  </table>
+
+<center> <img src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/national_water_level_forecast_peru.png' %}" style="width: 100px;" /> </center></a>
+
+
 <p>Este website contiene una guía para el manejo de la aplicación National Water Level Forecast, alojada en la  plataforma
 tethys de SENAMHI.
 Tethys fue probada mediante la implementación de portales web para socios de la iniciativa de sostenibilidad del agua del
@@ -41,12 +50,8 @@ En Peru, la implementación y personalización de la aplicación ha sido posible
 SENAMHI, Conservación Amazónica – ACCA y el Centro Internacional de Agricultura Tropical (CIAT), mediante el programa SERVIR-Amazonia.</p>
 
 
-<center><h2 style="color:#20295c;"><strong>NATIONAL WATER LEVEL FORECAST (NWLF)</strong></h2></center>
 
-<a class="reference internal image-reference" href="_images/nwlf.png"> <center> <img src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/nwlf.png' %}" style="width: 200px;" /> </center></a>
-
-
-<p style="color:#20295c;"><strong>Información General</strong></p>
+<p style="color:#20295c;"><strong><h4>Información General</h4></strong></p>
 
 <p>La Aplicación <strong> National Water Level Forecast</strong> permite visualizar pronósticos de nivel solo donde existen
     datos histórico usando corrección de sesgo.
@@ -56,109 +61,107 @@ Para cada estación, el usuario puede ver series de tiempo y calcular métricas 
 la delimitación de los ríos en azul y de las estaciones con mediciones de nivel observadas y corregidas por le método
 de corrección de sesgo identificados con puntos en rojo.</p>
 
-    <center> <img id="paginit"  src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/initialviwenwlf.png' %}"
-         style="width: 700px;"></center>
+
+<center> <img src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/nwlf.png' %}" style="width: 600px;" /> </center></a>
 
 
 
-<p> A la izquierda de la pantalla se muestra un panel con algunas opciones de visualización:</p>
-
-<center><img id="botondesplegable="  src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/botones_desplegables.png' %}"
-     style="width: 200px;"></center>
-
-<p> Las opciones de visualización en el panel son para observar: Provincias, demarcaciones, unidades hidrográficas y
-    realizar una búsqueda de lugares de interés:</p>
+<p> A la izquierda de la pantalla se muestra un panel con algunas opciones de visualización:
+    Región,Provincia, Cuenca, Subcuenca y realizar una búsqueda de lugares de interés:</p>
 
 <ol>
 
-    <li><strong>Provincias</strong></li>
+    <li><strong>Regiones</strong></li>
 
-<p> A manera de ejemplo, puede hacer clic en el botón <strong> Zoom a la Provincia</strong> y seleccionar provincia:</p>
+<p> A manera de ejemplo, puede hacer clic en el botón <strong> Zoom to a Region</strong> y seleccionar la región de interés:</p>
 
- <a class="reference internal image-reference" href="_images/mapa_Provincias.png"><center><img alt="_images/mapa_Provincias.png" class="align-center" src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/mapa_Provincias.png' %}" style="width: 700px;" /></center></a>
+<center><img src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/region.png' %}" style="width: 700px;" /></center></a>
 
-<p> De esta manera, podrá visualizar el mapa del Peru con la división provincial.</p>
-<p>Pero, también puede hacer búsqueda por la provincia de interés, por ejemplo seleccione la Provincia de Morona Santiago:</p>
 
-<a class="reference internal image-reference" href="_images/zoom_provincia.png"><center><img src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/zoom_provincia.png' %}" style="width: 700px;" /></center></a>
+  <li><strong>Provincias</strong></li>
+<p>Al hacer click en el botón <strong>Zoom to Province</strong>, podrá observar las diferentes provincias de Perú y seleccionar
+la que desee:</p>
 
-<p>Como se observa en la imagen, se pueden observar con puntos rojos todas las estaciones localizadas en la Provincia de
-Morona Santiago.</p>
+  <center><img src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/provincia.png' %}" style="width: 700px;" /></center></a>
 
-<li><strong>Demarcaciones hidrológicas</strong></li>
+  <p>Como se observa en la imagen, se pueden observar con puntos rojos todas las estaciones localizadas en la provincia seleccionada.</p>
 
-<p>Como ejemplo, seleccione la demarcación Esmeraldas:</p>
+<li><strong>Cuencas</strong></li>
+<p> Al hacer clic en el botón <strong>Zoom to a Basin</strong>, se desplegarán las cuencas de Perú.</p>
 
-<a class="reference internal image-reference" href="_images/demarcacion_Esmeraldas.png"><center><img src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/demarcacion_Esmeraldas.png' %}" style="width: 500px;" /></center></a>
-<p>Como se observa en la imagen, se pueden observar con puntos rojos todas las estaciones localizadas en la demarcación
-Esmeraldas.</p>
+<center><img src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/cuenca.png' %}" style="width: 700px;" /></center></a>
 
-<li><strong>Unidades hidrográficas Nivel 3</strong></li>
-<p> Al hacer clic en el botón <strong>Zoom a la Unidad Hidrográfica Nivel 3</strong>, y posteriormente en <strong>UNIDADES</strong></p>
+  <li><strong>Subcuencas</strong></li>
+<p> Al hacer clic en el botón <strong>Zoom to a Subbasin</strong></p>
 
-<a class="reference internal image-reference" href="_images/UH_3.png"><center><img src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/UH_3.png' %}" style="width: 500px;" /></center></a>
+<center><img src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/subcuenca.png' %}" style="width: 700px;" /></center></a>
 
-<p>Posteriormente,selecciones la unidad hidrográfica de la Cuenca del Río Carchi:</p>
-<a class="reference internal image-reference" href="_images/cuenca_rio_carchi.png"><center><img alt="_images/cuenca_rio_carchi.png" src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/cuenca_rio_carchi.png' %}" style="width: 500px;" /></center></a>
 
-<p>Como se observa en la imagen, se pueden observar con puntos rojos todas las estaciones localizadas en la Cuenca del Río
-Carchi.</p>
-
-<li>También en el botón desplegable, en la opción <strong>Búsqueda por estación</strong> localizado a la izquierda de la pantalla
+  <li>También en el botón desplegable, en la opción <strong>Search</strong> localizado a la izquierda de la pantalla
 puede realizar la búsqueda por estación, comid (identificación del río por código), y río.
-En el siguiente ejemplo, ingresaremos al botón el nombre <strong>río Zamora</strong> y se marcarán en círculos negros todas las estaciones
-localizadas a lo largo del río:</li>
-<a class="reference internal image-reference" href="_images/rio_zamora.png"><center><img alt="_images/rio_zamora.png" class="align-center" src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/rio_zamora.png' %}" style="width: 500px;" /></center></a>
-<p>La búsqueda de estación se puede realizar por el código de la misma o nombre de la estación:</p>
-<a class="reference internal image-reference" href="_images/H0890.png"><center><img alt="_images/H0890.png" class="align-center" src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/H0890.png' %}"  style="width: 500px;" /></center></a>
+En el siguiente ejemplo, ingresaremos el nombre <strong>Río Blanco</strong> y se marcará en círculo negro la estación
+de interés asociada al nombre.</li>
+<center><img src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/search.png' %}" style="width: 700px;" /></center></a>
+
 
 </ol>
 <p>Una vez identificada la estación de interés al hacer clic en la misma, aparecerá una ventana emergente con los datos de
 la misma.</p>
-<a class="reference internal image-reference" href="_images/info_station.png"><center><img alt="_images/info_station.png" class="align-center" src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/info_station.png' %}"  style="width: 500px;" /></center></a>
-<p>La ventana emergente, mostrará 4 pestañas diferentes: hidrograma, análisis visual, reporte de métricas y pronóstico.</p>
 
-<a class="reference internal image-reference"  <center><img src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/boton_ventana_emergente.png' %}"  style="width: 500px;" /></center></a>
+ <center><img src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/boton_ventana_emergente.png' %}"  style="width: 500px;" /></center></a>
+
+<p>Al hacer clic en la estación, aparecerá una ventana emergente con los datos de la misma. La ventana emergente,
+  mostrarán 4 pestañas diferentes: hidrograma, análisis visual, reporte de métricas y pronóstico.</p>
+
+
 <ol>
 
-<h3> <strong><li>Hidrograma</li></strong></h3>
+  <table width="100%"  bgcolor="#00374b">
+    <tr>
+     <td> <h4 style="color:#ffffff;"><strong>1. Hidrograma</strong></h4></td>
+    </tr>
+  </table>
+
 <p>La pestaña muestra el hidrograma con los valores observados de nivel,y la simulación histórica corregida.
 Este gráfico muestra la mejora entre el hidrograma de datos observados (azul) y el hidrograma de datos con
 corrección de sesgo (verde).</p>
-<a class="reference internal image-reference" href="_images/compare.png"><center><img alt="_images/compare.png" class="align-center" src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/compare.png' %}"  style="width: 500px;" /></center></a>
-<p>El usuario puede activar y desactivar cada una de las opciones del hidrograma.</p>
-<p>Desactivando la capa de datos corregidos, observará los datos observados:</p>
-<a class="reference internal image-reference" href="_images/hydrograph_observed.png"><center><<img alt="_images/hydrograph_observed.png" class="align-center" src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/hydrograph_observed.png' %}"  style="width: 500px;" /></center></a>
-<p>Desactivando la capa de datos observados, visualizará los datos corregidos:</p>
-<a class="reference internal image-reference" href="_images/hydrograph_corrected.png"><center><img alt="_images/hydrograph_corrected.png" class="align-center" src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/hydrograph_corrected.png' %}"  style="width: 500px;" /></center></a>
+<center><img  src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/hidrograma.png' %}"  style="width: 500px;" ></center>
+<p>El usuario puede activar y desactivar cada una de las opciones del hidrograma.Desactivando la capa de datos corregidos,
+    observará los datos observados. Desactivando la capa de datos observados, visualizará los datos corregidos. Podrá descargar
+en csv los datos de simulación haciendo clic en <b>Download</b></p>
 
-    <h3><strong><li>Análisis visual </li> </strong></h3>
-<p>La segunda pestaña en la ventana emergente es el análisis visual:
-
-    <p><strong>Promedio diario</strong></p>
-<a class="reference internal image-reference" href="_images/daily_average.png"> <center><img alt="_images/daily_average.png" class="align-center" src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/daily_average.png' %}"  style="width: 500px;" /></center></a>
-
-    <p><strong>Promedio mensual</strong></p>
-<a class="reference internal image-reference" href="_images/monthly_average.png"> <center><img alt="_images/monthly_average.png" class="align-center" src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/monthly_average.png' %}"  style="width: 500px;" /></center></a>
-
-    <p><strong>Diagrama de dispersión</strong></p>
-<a class="reference internal image-reference" href="_images/scatter_plot.png"><center><img alt="_images/scatter_plot.png" class="align-center" src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/scatter_plot.png' %}" style="width: 500px;" /></center></a>
-
-    <p><strong>Diagrama de dispersión usando escala logarítmica</strong></p>
-<a class="reference internal image-reference" href="_images/scatter_plot_log.png"> <center><img alt="_images/scatter_plot_log.png" class="align-center" src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/scatter_plot_log.png' %}" style="width: 500px;" /></center></a>
+  <table width="100%"  bgcolor="#00374b">
+    <tr>
+     <td><h4 style="color:#ffffff;"><strong>2. Análisis visual</strong></h4></td>
+    </tr>
+  </table>
+<p>La segunda pestaña en la ventana emergente es el análisis visual: promedio diario, promedio mensual, diagrama de
+    dispersión, y diagrama de dispersión usando escala logarítmica.</p>
+<center><img src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/visual_analysis.png' %}" style="width: 700px;" ></center>
 <p>De igual manera que los gráficos anteriores, es posible activar y desactivar capas en los gráficos.</p>
 
-<h3><strong><li> Informe de métricas</li></strong></h3>
+
+
+      <table width="100%"  bgcolor="#00374b">
+    <tr>
+     <td><h4 style="color:#ffffff;"><strong>3. Informe de métricas</strong></h4></td>
+    </tr>
+  </table>
 
 <p>La tercera pestaña en la ventana emergente es el informe de métricas.</p>
 
-<a class="reference internal image-reference" href="_images/reporte_metricas.png"><center><img alt="_images/reporte_metricas.png" class="align-center" src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/reporte_metricas.png' %}" style="width: 500px;" /></center></a>
+<center><img alt="_images/reporte_metricas.png" class="align-center" src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/metricas.png' %}" style="width: 500px;"></center>
 
     <p>El informe de métricas tiene una lista de métricas predeterminadas, pero los usuarios pueden agregar métricas adicionales de las disponibles en el paquete
-HydroStats.</p>
-<a class="reference internal image-reference" href="_images/add_metrics.png"><center><img alt="_images/add_metrics.png" class="align-center" src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/add_metrics.png' %}"  style="width: 500px;" /></center></a>
+HydroStats, en el  botón <b>Add Metrics</b>.</p>
 
-<h3><strong><li> Pronóstico</li></strong></h3>
+
+
+      <table width="100%"  bgcolor="#00374b">
+    <tr>
+     <td> <h4 style="color:#ffffff;"><strong>4. Pronóstico</strong></h4></td>
+    </tr>
+  </table>
 
 <p>La pestaña muestra el pronóstico corregido por sesgo con umbrales de períodos de retorno calculados a partir de la
 simulación histórica corregida por sesgo. El gráfico de pronóstico proviene de 51 simulaciones diferentes más un
@@ -171,19 +174,26 @@ periodos de retorno calculados para la simulación histórica y la simulación h
 Los datos de cada período de tiempo aparecen al pasar el cursor sobre el gráfico. Los datos pueden ser descargados
 desde la pestaña final.
 También puede seleccionar el pronóstico de una fecha pasada al hacer clic en el calendario y seleccionar la fecha de
-interés:</p>
-<a class="reference internal image-reference" href="_images/pronostico_calendario.png"><center><img alt="_images/pronostico_calendario.png" class="align-center" src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/pronostico_calendario.png' %}"  style="width: 500px;" /></center></a>
-
+interés.</p>
     </ol>
 
 
-<h5 style="color:#20295c;"><strong>Páginas de Interés</strong></h5>
+  <table width="100%"  align="center" bgcolor="#00374b">
+    <tr>
+     <td><center> <h5 style="color:#ffffff;"><strong>Páginas de Interés</strong></h5></center></td>
+    </tr>
+  </table>
+
 <p>Página de SENAMHI: <a class="reference external" href="https://www.senamhi.gob.pe/" target="_blank">SENAMHI</a></p>
 <p>Página de SERVIR-Amazonia: <a class="reference external" href="https://servir.ciat.cgiar.org/?lang=es">SERVIR-Amazonia</a></p>
 <p>Página de Conservación Amazónica: <a class="reference external" href="https://www.acca.org.pe/" target="_blank">Conservación Amazónica – ACCA</a></p>
 <p>Página de Laboratorio de Hydroinformática Brigham Young University: <a class="reference external" href="https://hydroinformatics.byu.edu/">Página BYU</a></p>
 <p>Video de Brigham Young University-GEOGloWS: <a class="reference external" href="https://youtu.be/PLG8U8AQmXY">Video BYU</a></p>
-
+<p>Video Inundaciones:
+  <a
+          class="reference external" href="https://youtu.be/mWj-7GcvXrA" target="_blank">
+    Video Inundaciones</a>
+</p>
 
 
 </div>

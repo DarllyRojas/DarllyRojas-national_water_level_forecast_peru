@@ -36,13 +36,13 @@
 {% endblock %} 
 
 {% block app_content %}
-<center></center>
-<h1 style="color: #20295c"><strong>MANUAL TÉCNICO</strong></h1>
-<center></center>
+  <table width="100%"  align="center" bgcolor="#00374b">
+    <tr>
+     <td><center> <h1 style="color:#ffffff;"><strong>MANUAL TÉCNICO: NATIONAL WATER LEVEL FORECAST</strong></h1></center></td>
+    </tr>
+  </table>
 
-<center></center>
-<h1 style="color: #20295c"><strong>NATIONAL WATER LEVEL FORECAST</strong></h1>
-<center></center>
+<center> <img src="{% static 'national_water_level_forecast_peru/images/imgs/nwlf/national_water_level_forecast_peru.png' %}" style="width: 100px;" /> </center></a>
 
 <p>
   El modelo hidrológico global de GEOGloWS ECMWF Streamflow Services (GESS)
@@ -159,9 +159,11 @@
   </center>
 </p>
 
-<p style="color: #20295c">
-  <strong><h6>Recursos Adicionales</h6></strong>
-</p>
+  <table width="100%"  align="center" bgcolor="#00374b">
+    <tr>
+     <td><center> <h5 style="color:#ffffff;"><strong>Recursos de Interés</strong></h5></center></td>
+    </tr>
+  </table>
 <p>
   Ejercicio práctico:Water Level - GEOGloWS ECMWF Streamflow Services - Brazil
 </p>
@@ -170,10 +172,11 @@
     href="https://colab.research.google.com/drive/1cuKOV-TDjrS2gzGVIi2_sgSCqhDSyGne"
     >Google Colab de ejemplo</a
   >
-</p>
-
-<h5 style="color: #20295c"><strong>Páginas de Interés</strong></h5>
-<p>
+  <table width="100%"  align="center" bgcolor="#00374b">
+    <tr>
+     <td><center> <h5 style="color:#ffffff;"><strong>Páginas de Interés</strong></h5></center></td>
+    </tr>
+  </table>
   Página de SENAMHI:
   <a
     class="reference external"
@@ -208,6 +211,11 @@
   >
 </p>
 
+<p>Video Inundaciones:
+  <a
+          class="reference external" href="https://youtu.be/mWj-7GcvXrA" target="_blank">
+    Video Inundaciones</a>
+</p>
 {% endblock %} 
 
 {% block after_app_content %} 
