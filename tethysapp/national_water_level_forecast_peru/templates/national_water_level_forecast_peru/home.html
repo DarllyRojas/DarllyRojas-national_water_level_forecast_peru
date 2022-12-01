@@ -528,13 +528,7 @@
   </div>
 </div>
 <!-- About Modal -->
-<div
-  class="modal fade"
-  id="help-modal"
-  tabindex="-1"
-  role="dialog"
-  aria-labelledby="help-modal-label"
->
+<div class="modal fade" id="help-modal" tabindex="-1" role="dialog" aria-labelledby="help-modal-label">
   <div class="modal-dialog modal-xl" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -546,49 +540,28 @@
 
       </div>
       <div class="modal-body">
-        <p>
-          The National Water Level Forecast web application customized for Peru
-          is a light-weight application for evaluate the bias-corrected
-          simulated values for the GEOGloWS ECMWF Streamflow Prediction Tool in
-          Peru.
+
+        <p id="overview" style="color:#b5001a;">
+            <strong>AVISO LEGAL:</strong>
+            “Este producto contiene estimaciones de niveles pronosticados para los siguientes días en base a simulaciones globales. Estas simulaciones han sido contrastadas con información observada. El uso del portal se realizará bajo la única y exclusiva responsabilidad del usuario.”
         </p>
-        <p>
-          This app allows us to use the hydrostats functionality in order to
-          evaluate how accurate is the bias corrected historical simulation from
-          the GEOGloWS ECMWF Streamflow Prediction Tool in XXX Gauging Stations
-          in Peru.
-        </p>
-        <p>
-          Additionally, this bias-correction is extended to the GEOGloWS ECMWF
-          Streamflow Prediction Tool short term forecast
-        </p>
-        <p>
-          Users can click on any station in the map to retrieve observed and
-          simulated data.
-        </p>
+
+        <p>La aplicación National Water Level Forecast personalizada para Peru es una aplicación ligera que muestra pronóstico de nivel.</p>
+        <p>Esta aplicación nos permite utilizar la funcionalidad de hydrostats para evaluar la precisión de la simulación
+            histórica corregida para niveles de la herramienta de predicción de caudales de GEOGloWS ECMWF en las estaciones hidrológicas en Peru.</p>
+        <p>Además, esta corrección de sesgo se extiende a la previsión a corto plazo de la herramienta de predicción de caudales de GEOGloWS ECMWF.</p>
+        <p>Los usuarios pueden hacer clic en cualquier estación del mapa para obtener los datos observados y simulados.</p>
         <ol>
-          <li>
-            The first tab displays a plot of the historical observed data, the
-            GEOGloWS ECMWF Streamflow Prediction Tool bias-corrected simulation
-            data.
-          </li>
-          <li>
-            The second tab displays the Visual Analysis included in Hydrostats.
-            It includes plots for the daily average streamflow, the monthly
-            average streamflow, the scatter plot, and the scatter plot in the
-            log scale.
-          </li>
-          <li>
-            The third tab includes a table report with some predefined list of
-            metrics. It also allows you select a set of metrics that you want to
-            use in order to validate the bias-corrected historical simulation of
-            the Streamflow Prediction Tool.
-          </li>
-          <li>
-            The fourth tab displays a plot with the GEOGloWS ECMWF Streamflow
-            Prediction Tool bias-corrected forecast data.
-          </li>
+            <li> La primera pestaña muestra un gráfico de los datos históricos observados, los datos de simulación corregidos para niveles de la herramienta de predicción de caudales GEOGloWS ECMWF.</li>
+            <li> La segunda pestaña muestra el Análisis Visual incluido en Hydrostats. Incluye gráficos para el nivel medio diario, el nivel medio mensual, el gráfico de dispersión y el gráfico de dispersión en la escala logarítmica.</li>
+            <li> La tercera pestaña incluye un informe de tabla con alguna lista predefinida de métricas. También permite seleccionar un conjunto de métricas que se desea utilizar. </li>
+            <li> La cuarta pestaña muestra un gráfico con los datos de previsión corregidos por el sesgo.</li>
         </ol>
+
+        <h5>Recursos adicionales:</h5>
+        <p><a href=" user_manual " target="_blank">Manual de Usuarios</a></p>
+        <p><a href=" technical_manual " target="_blank">Manual Técnico</a></p>
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-bs-dismiss="modal">

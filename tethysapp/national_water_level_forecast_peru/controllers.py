@@ -1483,6 +1483,28 @@ def get_forecast_ensemble_bc_data_csv(request):
             'error': f'{"error: " + str(e), "line: " + str(exc_tb.tb_lineno)}',
         })
 
+@controller(name='user_manual', url='national-water-level-forecast-peru/user_manual')
+def user_manual(request):
+    """
+    Controller for the technical manual page.
+    """
+
+    context = {
+    }
+
+    return render(request, 'national_water_level_forecast_peru/user_manual.html', context)
+
+@controller(name='technical_manual', url='national-water-level-forecast-peru/technical_manual')
+def technical_manual(request):
+    """
+    Controller for the user manual page.
+    """
+
+    context = {
+    }
+
+    return render(request, 'national_water_level_forecast_peru/technical_manual.html', context)
+
 ############################################################
 @controller(name='get_zoom_array', url='national-water-level-forecast-peru/get-zoom-array')
 def get_zoom_array(request):

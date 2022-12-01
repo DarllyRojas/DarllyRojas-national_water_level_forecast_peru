@@ -107,6 +107,16 @@ class NationalWaterLevelForecastPeru(TethysAppBase):
     #             url='get-forecast-ensemble-bc-data-csv',
     #             controller='national_water_level_forecast_peru.controllers.get_forecast_ensemble_bc_data_csv'
     #         ),
+    #         UrlMap(
+    #             name='user_manual',
+    #             url='national-water-level-forecast-peru/user_manual',
+    #             controller='national_water_level_forecast_peru.controllers.user_manual'
+    #         ),
+    #         UrlMap(
+    #             name='technical_manual',
+    #             url='national-water-level-forecast-peru/technical_manual',
+    #             controller='national_water_level_forecast_peru.controllers.technical_manual'
+    #         ),
     #         ########################################
     #         ########################################
     #         UrlMap(
